@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email test</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $('#submit').click(function() {
+
+            $.post("send.php", $("#mycontactform").serialize(), function(response) {
+                $('#success').html(response);
+                //$('#success').hide('slow');
+            });
+            return false;
+
+
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <p>Send mail:</p>
+            <form action="send.php" method="POST">
+                <input required class="input" type="text" name="to" placeholder="To:" />
+                <br>
+                <input class="input" type="text" name="from" placeholder="From:" />
+                <br>
+                <input class="input" type="text" name="subject" placeholder="Subject:" />
+                <br>
+                <br>
+                <textarea name="message" placeholder="Message:"></textarea>
+                <br>
+                <div class="outer">
+                    <input class="button" type="submit" name="submit" value="Send!" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

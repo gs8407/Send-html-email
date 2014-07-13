@@ -1,0 +1,200 @@
+/* CSS RESET */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	font-family:open-sans, serif;
+}
+
+body {
+    line-height:1;
+	font-family:open-sans, serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* START STYLE */
+
+
+html{
+	background-color:#d8d7d7;
+	}
+body{
+	
+	background-image:url(../images/back.jpg);
+	background-repeat:no-repeat;
+	}
+
+header {
+	background-color: #212121;
+	height: 80px;
+	width: 100%;
+	border-top-width: 2px;
+	/* [disabled]border-right-width: medium; */
+	border-bottom-width: 1px;
+	/* [disabled]border-left-width: medium; */
+	border-top-style: solid;
+	/* [disabled]border-right-style: none; */
+	border-bottom-style: solid;
+	/* [disabled]border-left-style: none; */
+	border-top-color: #09F;
+	/* [disabled]border-right-color: #09F; */
+	border-bottom-color: #000;
+	/* [disabled]border-left-color: #09F; */
+}
+
+hgroup {
+	width:980px;
+	margin: 0 auto;
+	padding:10px;
+}
+
+#logo{float:left;}
+hgroup h1 {float:left; color:whitesmoke; padding:20px; font-size:24px; font-weight:normal;}
+#wrap {
+	width:980px;
+	margin:0 auto;
+	padding:10px 10px;
+}
+ #board {
+	width:960px;
+	padding:10px;
+	padding-bottom:50px;
+	-webkit-box-shadow: 0px -1px 11px rgba(50, 50, 50, 0.43);
+-moz-box-shadow:    0px -1px 11px rgba(50, 50, 50, 0.43);
+box-shadow:         0px -1px 11px rgba(50, 50, 50, 0.43); 
+	 background-color:whitesmoke;
+	 }
+	 
+h5 {
+	text-align:center; vertical-align:middle;}
+	
+.DetailColumn span { font-size:15px;}
+
+.choose{font-size:18px; margin:20px 0; color:#09F;}
+.selected{font-size:24px; margin:20px 0; color:#212121; font-weight:bold; line-height:44px;}
+.selected img{float:left;margin-right:10px;}
+.main {height:100px; background-color: #333; color: whitesmoke; border:none;}
+.secondmain {background-color: #FFF; border:none;}
+.price {font-size:20px;}
+
+#tab{width:960px; padding:0;}
+
+.tabs li {list-style:none; display:inline-block; padding-left:255px;}
+.tabs li a {height:100px; width:100px;}
+.tabs li img {height:100px; width:100px;}
+.usa { width:100px; height:100px; background-image:url(../images/usa.png); background-repeat:no-repeat; float:left;}
+.usa:hover { background-position:-100px;}
+.usa.active {background-position:-200px; cursor: default;}
+.canada {width:100px; height:100px; background-image:url(../images/canada.png); background-repeat:no-repeat;float:left;}
+.canada:hover { background-position:-100px;}
+.canada.active { background-position:-200px; cursor: default;}
+
+
+.DetailColumn.main
+{
+	height:80px;
+	line-height:80px;
+}
+
+.DetailColumn.secondmain
+{
+	height:80px;
+	line-height:80px;
+}
+
+a:focus { 
+    outline: none; 
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+:-moz-any-link:focus {
+  outline: none;
+}

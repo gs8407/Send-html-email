@@ -17,6 +17,6 @@ $headers .= 'Content-Type: text/html; charset=utf-8' . "\r\n";
 
 mail($to,$subject,$body,$headers);
 
-echo "Message Sent!";
+echo "Poruka je poslata!";
 
 ?>
